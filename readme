@@ -1,0 +1,15 @@
+CONDICIONES INICIALES
+Para ejecutar este proyecto deben reproducir las configuraciones 
+base con las que se construyó:
+El proyecto usa la base de datos mysql por lo tanto se usará la 
+instacia generada por MAMP:
+Enlace de descarga de MAMP => https://www.mamp.info/en/downloads/
+Asegurarse que esa instancia de mysql trabaja sobre el puerto 3306.
+En el phpmyadmin de esta herramienta deberán configurar una nueva
+base de datos cuyo script que será compartido en el repositorio.
+Recordar que cada cambio realizado como administrador se traduce 
+en modificaciones a la base de datos por lo tanto en cada commit 
+incluir el script con los cambios.
+Perfil de adminstrador: usuario => adminsport, contraseña => adminsport
+Una vez clonado el proyecto  adentro de la carpeta sportbcknd ejecutar
+NPM INSTALL para reinstalar las dependencias del packajge.json
