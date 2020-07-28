@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valoracions",
+      "handler": "valoracion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valoracions/count",
+      "handler": "valoracion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valoracions/:id",
+      "handler": "valoracion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valoracions",
+      "handler": "valoracion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valoracions/:id",
+      "handler": "valoracion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valoracions/:id",
+      "handler": "valoracion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

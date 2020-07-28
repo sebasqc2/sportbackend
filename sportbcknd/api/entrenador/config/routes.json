@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/entrenadors",
+      "handler": "entrenador.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entrenadors/count",
+      "handler": "entrenador.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/entrenadors/:id",
+      "handler": "entrenador.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/entrenadors",
+      "handler": "entrenador.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/entrenadors/:id",
+      "handler": "entrenador.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/entrenadors/:id",
+      "handler": "entrenador.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

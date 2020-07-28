@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alumnos",
+  "info": {
+    "name": "Alumnos"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_ALUMNO": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "APELLIDO": {
+      "type": "string",
+      "required": true
+    },
+    "DIRECCION": {
+      "type": "string",
+      "required": true
+    },
+    "TELEFONO": {
+      "type": "string",
+      "required": true
+    },
+    "CORREO": {
+      "type": "email",
+      "required": true
+    },
+    "FECHA_NACIMIENTO": {
+      "type": "date",
+      "required": true
+    },
+    "FECHA_INGRESO": {
+      "type": "date",
+      "required": true
+    },
+    "ESTADO": {
+      "type": "boolean",
+      "required": true
+    },
+    "categoria": {
+      "via": "alumnos",
+      "model": "categorias"
+    },
+    "acudiente": {
+      "via": "alumnos",
+      "model": "acudiente"
+    },
+    "valoraciones": {
+      "via": "alumno",
+      "collection": "valoracion"
+    },
+    "mensualidades": {
+      "via": "alumno",
+      "collection": "mensualidades"
+    }
+  }
+}

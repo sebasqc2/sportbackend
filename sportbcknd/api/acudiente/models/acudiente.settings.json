@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "acudientes",
+  "info": {
+    "name": "Acudientes"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_ACUDIENTE": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "APELLIDO": {
+      "type": "string",
+      "required": true
+    },
+    "DIRECCION": {
+      "type": "string",
+      "required": false
+    },
+    "TELEFONO": {
+      "type": "string",
+      "required": true
+    },
+    "CORREO": {
+      "type": "email"
+    },
+    "ESTADO": {
+      "type": "boolean",
+      "required": true
+    },
+    "alumnos": {
+      "collection": "alumnos",
+      "via": "acudiente"
+    }
+  }
+}

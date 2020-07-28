@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mensualidades",
+      "handler": "mensualidades.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mensualidades/count",
+      "handler": "mensualidades.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mensualidades/:id",
+      "handler": "mensualidades.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mensualidades",
+      "handler": "mensualidades.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mensualidades/:id",
+      "handler": "mensualidades.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mensualidades/:id",
+      "handler": "mensualidades.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

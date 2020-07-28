@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deportes",
+  "info": {
+    "name": "Deportes"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_DEPORTE": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "escuela": {
+      "model": "escuelas",
+      "via": "deportes"
+    },
+    "categorias": {
+      "via": "deporte",
+      "collection": "categorias"
+    }
+  }
+}

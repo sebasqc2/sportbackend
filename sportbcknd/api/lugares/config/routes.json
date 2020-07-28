@@ -1,0 +1,51 @@
+{
+    "routes": [{
+            "method": "GET",
+            "path": "/lugares",
+            "handler": "lugares.find",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/lugares/count",
+            "handler": "lugares.count",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "GET",
+            "path": "/lugares/:id",
+            "handler": "lugares.findOne",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "POST",
+            "path": "/lugares",
+            "handler": "lugares.create",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "PUT",
+            "path": "/lugares/:id",
+            "handler": "lugares.update",
+            "config": {
+                "policies": []
+            }
+        },
+        {
+            "method": "DELETE",
+            "path": "/lugares/:id",
+            "handler": "lugares.delete",
+            "config": {
+                "policies": []
+            }
+        }
+    ]
+}

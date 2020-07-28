@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movimientos",
+  "info": {
+    "name": "Movimientos"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_ESCUELA": {
+      "type": "integer",
+      "required": true
+    },
+    "FECHA": {
+      "type": "date",
+      "required": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "VALOR": {
+      "type": "integer",
+      "required": true
+    },
+    "OBSERVACION": {
+      "type": "text",
+      "required": true
+    },
+    "TIPO": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

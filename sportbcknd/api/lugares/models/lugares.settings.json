@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lugares",
+  "info": {
+    "name": "Lugares"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_LUGAR": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE_LUGAR": {
+      "type": "string",
+      "required": true
+    },
+    "actividades": {
+      "collection": "actividades",
+      "via": "lugare"
+    }
+  }
+}

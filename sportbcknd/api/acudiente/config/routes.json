@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/acudientes",
+      "handler": "acudiente.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acudientes/count",
+      "handler": "acudiente.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/acudientes/:id",
+      "handler": "acudiente.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/acudientes",
+      "handler": "acudiente.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/acudientes/:id",
+      "handler": "acudiente.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/acudientes/:id",
+      "handler": "acudiente.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

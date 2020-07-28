@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "valoracions",
+  "info": {
+    "name": "Valoraciones"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_VALORACION": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "VALOR": {
+      "type": "string",
+      "required": true
+    },
+    "alumno": {
+      "model": "alumnos",
+      "via": "valoraciones"
+    }
+  }
+}

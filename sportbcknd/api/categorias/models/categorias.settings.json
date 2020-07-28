@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "Categorias"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_CATEGORIA": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE_CATEGORIA": {
+      "type": "string",
+      "required": true
+    },
+    "deporte": {
+      "model": "deportes",
+      "via": "categorias"
+    },
+    "alumnos": {
+      "collection": "alumnos",
+      "via": "categoria"
+    },
+    "entrenadore": {
+      "model": "entrenador",
+      "via": "categorias"
+    },
+    "actividades": {
+      "via": "categoria",
+      "collection": "actividades"
+    }
+  }
+}

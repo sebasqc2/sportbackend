@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "escuelas",
+  "info": {
+    "name": "escuelas"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "NOMBRE_ESCUELA": {
+      "type": "string",
+      "required": true
+    },
+    "DIRECCION": {
+      "type": "string",
+      "required": true
+    },
+    "TELEFONO": {
+      "type": "string",
+      "required": true
+    },
+    "FAX": {
+      "type": "string"
+    },
+    "ID_ESCUELA": {
+      "type": "string"
+    },
+    "deportes": {
+      "via": "escuela",
+      "collection": "deportes"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividades",
+  "info": {
+    "name": "Actividades"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_ACTIVIDAD": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "NOMBRE": {
+      "type": "string",
+      "required": true
+    },
+    "FECHA": {
+      "type": "date",
+      "required": true
+    },
+    "HORA": {
+      "type": "time",
+      "required": true
+    },
+    "DURACION": {
+      "type": "integer",
+      "required": true
+    },
+    "OBSERVACIONES": {
+      "type": "text"
+    },
+    "categoria": {
+      "model": "categorias",
+      "via": "actividades"
+    },
+    "lugare": {
+      "via": "actividades",
+      "model": "lugares"
+    }
+  }
+}

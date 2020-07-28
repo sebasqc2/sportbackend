@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mensualidades",
+  "info": {
+    "name": "mensualidades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ID_MENSUALIDAD": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "PERIODO": {
+      "type": "string",
+      "required": true
+    },
+    "VALOR": {
+      "type": "integer",
+      "required": true
+    },
+    "ESTADO": {
+      "type": "boolean",
+      "required": true
+    },
+    "alumno": {
+      "model": "alumnos",
+      "via": "mensualidades"
+    }
+  }
+}

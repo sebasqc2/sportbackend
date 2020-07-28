@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inventarios",
+  "info": {
+    "name": "Inventarios"
+  },
+  "options": {
+    "increments": false,
+    "timestamps": false
+  },
+  "attributes": {
+    "ID_OBJETO": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "ID_ESCUELA": {
+      "type": "integer",
+      "required": true
+    },
+    "NOMBRE_OBJETO": {
+      "type": "text",
+      "required": true
+    },
+    "CANTIDAD_ACTIVOS": {
+      "type": "integer",
+      "required": true
+    },
+    "CANTIDAD_BAJAS": {
+      "type": "integer"
+    },
+    "VALOR_UNITARIO": {
+      "type": "integer",
+      "required": true
+    },
+    "FECHA_INGRESO": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
