@@ -11,5 +11,5 @@ Recordar que cada cambio realizado como administrador se traduce
 en modificaciones a la base de datos por lo tanto en cada commit 
 incluir el script con los cambios.
 Perfil de adminstrador: usuario => adminsport, contraseña => adminsport
-Una vez clonado el proyecto  adentro de la carpeta sportbcknd ejecutar
-NPM INSTALL para reinstalar las dependencias del packajge.json
+Una vez clonado el proyecto, adentro de la carpeta sportbcknd ejecutar
+NPM INSTALL para reinstalar las dependencias del package.json
