@@ -5,4 +5,10 @@
  * to customize this controller
  */
 
-module.exports = {};
+const findbynombre = async(pObjeto) => {
+    const { nombre, apelldo } = pObjeto.params;
+    const resultado = await strapi.query('categorias').find({ 'entrenadore.NOMBRE': nombre, 'entrenadore.APELLIDO': apelldo });
+    return resultado;
+}
+
+module.exports = { findbynombre };
